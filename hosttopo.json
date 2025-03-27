@@ -1,0 +1,46 @@
+{
+    "hosts": [
+        {
+            "name": "Slot-1",
+            "numas": [
+                {
+                    "name": "Numa-0",
+                    "core": 32,
+                    "largeMemory": 112,
+                    "vms": [
+                        {
+                            "name": "UCCU-1",
+                            "type": "UCCU"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "vmTypes": [
+        {
+            "name": "UCCU",
+            "moveable": true,
+            "core": 8,
+            "largeMemory": 24
+        },
+        {
+            "name": "USRSU-OA",
+            "moveable": true,
+            "core": 16,
+            "largeMemory": 48
+        },
+        {
+            "name": "USRSU-DA",
+            "moveable": true,
+            "core": 8,
+            "largeMemory": 48
+        },
+        {
+            "name": "USRSU-FA", 
+            "moveable": true,
+            "core": 8,
+            "largeMemory": 48
+        }
+    ]
+}
